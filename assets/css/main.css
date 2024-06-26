@@ -275,6 +275,10 @@ input, select, textarea {
 			margin: 5rem 0;
 		}
 
+	.indent-paragraphs {
+		text-indent: 30px; /* Adjust the value to set the desired indentation */
+	}
+
 	.align-left {
 		text-align: left;
 	}
@@ -2944,41 +2948,6 @@ input, select, textarea {
 			margin-top: -0.75rem;
 		}
 
-		header.major {
-			margin: 0 0 4rem 0;
-			text-align: center;
-		}
-
-			header.major > :last-child {
-				margin-bottom: 0;
-			}
-
-			header.major > p {
-				margin-top: 0;
-				text-align: center;
-			}
-
-			header.major > .date {
-				font-size: 1rem;
-				margin: 0 0 4rem 0;
-			}
-
-				header.major > .date:before, header.major > .date:after {
-					content: '';
-					display: block;
-					position: absolute;
-					top: 50%;
-					width: calc(50% - 6rem);
-					border-top: solid 2px;
-				}
-
-				header.major > .date:before {
-					left: 0;
-				}
-
-				header.major > .date:after {
-					right: 0;
-				}
 
 		@media screen and (max-width: 980px) {
 
@@ -3310,7 +3279,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		min-height: 25vh;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3398,7 +3367,7 @@ input, select, textarea {
 		}
 
 		#intro + #header {
-			margin-top: -20rem;
+			margin-top: -30rem;
 		}
 
 			#intro + #header .logo {
@@ -3515,8 +3484,8 @@ input, select, textarea {
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		height: 20rem;
-		padding-bottom: 8rem;
+		height: 30rem;
+		padding-bottom: 10rem;
 		position: relative;
 		text-align: center;
 		z-index: 2;
